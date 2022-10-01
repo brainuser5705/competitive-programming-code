@@ -14,3 +14,16 @@ class Solution:
                 i += 1
 
             return arr[i-1]
+
+arr = [1,2]
+
+for i in range(2,n):
+    arr.append(arr[i-1],arr[i-2])
+
+return arr[n-1]
+
+
+a, b = 1, 1
+for _ in range(1,n):
+    a, b = b, a + b
+return b
